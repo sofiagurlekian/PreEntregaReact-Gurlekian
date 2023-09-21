@@ -6,7 +6,6 @@ const Header = (props) => {
     <div className="Header">
     <img src= {img} alt = "logo-INBA"/>
       <h1>{props.title}</h1>
-      <h2>Subtitle</h2>
     </div>
   );
 };

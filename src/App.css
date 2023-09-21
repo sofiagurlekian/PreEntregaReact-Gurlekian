@@ -6,4 +6,10 @@
   .App {
     text-align: center;
   }
-  
+
+  .UserSection{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+
+  }
