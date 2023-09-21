@@ -1,0 +1,19 @@
+nav{
+    width:100%;
+    background-color: black;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+li{
+    color: white;
+    font-size: 18px;
+    list-style-type: none;
+}

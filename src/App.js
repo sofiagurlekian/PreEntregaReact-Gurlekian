@@ -3,6 +3,7 @@ import './App.css';
 
 import Header from './components/Header/Header';
 import CardUser from './components/CardUser/CardUser';
+import Navbar from "./components/Navbar/Navbar";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Header 
       title="Todo lo que buscás, en un solo lugar"
       />
+      <Navbar /> 
       <div className="UserSection">
       <CardUser 
       name="Sofia Gurlekian"
