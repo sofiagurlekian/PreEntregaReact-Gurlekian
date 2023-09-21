@@ -1,12 +1,17 @@
 import React from 'react'
 
-const itemListContainer = () => {
+const ItemListContainer = () => {
   return (
-    <div>
-     <h1> itemListContainer </h1>
+    <div className="ItemListContainer">
+     <ul>
+        <li>Show all</li>
+        <li>Bottom</li>
+        <li>Top</li>
+        <li>Sneakers and sandals</li>
+      </ul>
     </div>
   )
 }
 
 
-export default itemListContainer
+export default ItemListContainer

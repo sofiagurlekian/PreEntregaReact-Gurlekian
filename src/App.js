@@ -4,8 +4,8 @@ import './App.css';
 import Header from './components/Header/Header';
 import CardUser from './components/CardUser/CardUser';
 import Navbar from "./components/Navbar/Navbar";
-import itemListContainer from './components/itemListContainer/itemListContainer';
-console.log(itemListContainer);
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+
 
 function App() {
   // const [number, setNumber] = useState(1);
@@ -17,7 +17,7 @@ function App() {
       />
       <Navbar /> 
       <div>
-      <itemListContainer />
+      <ItemListContainer />
       </div>
       <div className="UserSection">
       <CardUser 
