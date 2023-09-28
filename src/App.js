@@ -1,4 +1,4 @@
-// import React, { useState } from "react";
+import { useState } from "react";
 import './App.css';
 
 import Header from './components/Header/Header';
@@ -8,7 +8,14 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 
 
 function App() {
-  // const [number, setNumber] = useState(1);
+  const [counter, setCounter] = useState(1);
+  const handleIncrement = () => {
+    setCounter(counter +1)
+  };
+
+  const handleDecrement = () => {
+    setCounter(counter -1)
+  };
 
   return (
     <div className="App">
@@ -40,9 +47,12 @@ function App() {
       />
     
       </div>
-      {/* /* <div className="CounterSection">
-        <p>{number}</p>
-      </div> */ }
+       <div className="CounterSection">
+        <p>{counter}</p>
+        <button onClick={handleIncrement}>Incrementar</button>
+        <button onClick={handleDecrement}>Disminuir</button>
+       </div>
+       
     </div>
   );
 }

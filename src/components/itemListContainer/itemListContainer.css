@@ -1,18 +1,18 @@
 .ItemListContainer{
-    margin: 50px;
-    width: 100px;
-    height: 100px;
+   margin: 5px;
+    width: 100%;
+    
 }
 
-ul{
+.ItemListUL{
     display: flex;
     justify-content: space-around;
+    background-color: whitesmoke;
     width: 50%;
-    background-color: gray;
 }
 
-li{
-    color: white;
+.ItemListUL li{
+    color: black;
     font-size: 18px;
     list-style-type: none;
 }
