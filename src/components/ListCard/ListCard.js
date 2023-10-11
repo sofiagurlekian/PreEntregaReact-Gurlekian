@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import CardProduct from "../CardProduct/CardProduct";
 import "./ListCard.css";
-import Spinner from '../Spinner/Spinner';
+// import Spinner from '../Spinner/Spinner';
+
+import {Link} from "react-router-dom";
 
 const ListCard = () => {
     const [products, setProducts] = useState ([]);
@@ -23,8 +25,11 @@ const ListCard = () => {
         {/* {isLoading ? <Spinner/> : <CardProduct/>} */}
         {products.map((product) => {
             return (
+                
                 <div key= {product.id}>
-                <CardProduct/>
+                <Link to={`/detail/${product.id}`}>
+                    <CardProduct/>
+                </Link>
                 </div>
             )
         })}

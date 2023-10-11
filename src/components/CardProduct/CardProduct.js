@@ -14,7 +14,7 @@ const CardProduct = ({ img, name, description, price }) => {
       <CardActionArea>
         <CardMedia
           component="img"
-          image={img} // {product.avatar.url} Recorro los productos que me traje de la API en List Card
+          image={img} // {product.url} Recorro los productos que me traje de la API en List Card
           alt="green iguana"
         />
         <CardContent>

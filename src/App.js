@@ -19,7 +19,8 @@ import Home from ".//pages/Home";
 import Contact from ".//pages/Contact";
 import About from ".//pages/About";
 import NotFound from "./pages/NotFound";
-
+import DetailPage from "./pages/DetailPage";
+import Category from "./pages/Category";
 
 function App() {
   const [counter, setCounter] = useState(1);
@@ -45,9 +46,13 @@ function App() {
         <Route path="/contact" element={<Contact/>} />
         <Route path="/about" element={<About/>} />  
         <Route path="*" element={<NotFound/>} />  
-       </Routes>
+        <Route path="/detail/:id" element={<DetailPage/>} /> 
+        </Routes>
       <div>
       <ItemListContainer />
+      <Routes>
+        <Route path="/category/:categoryId" element={<Category/>} /> 
+      </Routes>
       </div>
       <div className="UserSection">
       <CardProduct 
@@ -63,10 +68,10 @@ function App() {
       img="https://d3ugyf2ht6aenh.cloudfront.net/stores/646/958/products/cc6ccbd1-6b29-409d-9e5c-30ec653b288f1-8db0b0e7e23ed394a316717524249035-240-0.jpeg"
       />
       <CardProduct
-      name="Riñonera Nike"
+      name="Short Chicago Bulls"
       price="xxxx ARS"
-      description= "Medida Ajustable. Colores disponibles: Negro, y Blanco."
-      img="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/357/588/products/diseno-sin-titulo-2022-10-12t134601-4911-f89270621d89457a1816655933977424-1024-1024.png"
+      description= "Medida Ajustable."
+      img="https://acdn.mitiendanube.com/stores/001/015/914/products/bermuda-bulls1-ca9387d30a5bad1e0d16131512440095-1024-1024.webp"
       />
     
       </div>
