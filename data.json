@@ -1,5 +1,5 @@
 [
-    { "name": "Sandalias Adidas", "price": 1500,"description": "Talles disponibles del 35 al 42.", "url":"https://bboys.pe/cdn/shop/files/GZ3772_1.jpg?v=1684635575", "id": 1 },
-    { "name": "Casaca NY Knicks", "price": 2500, "description": "Disponible en S, M , L y XL.", "url":"https://d3ugyf2ht6aenh.cloudfront.net/stores/646/958/products/cc6ccbd1-6b29-409d-9e5c-30ec653b288f1-8db0b0e7e23ed394a316717524249035-240-0.jpeg", "id": 2 },
-    { "name": "Short Chicago Bulls", "price": 3500, "description": "Medida Ajustable.", "url":"https://acdn.mitiendanube.com/stores/001/015/914/products/bermuda-bulls1-ca9387d30a5bad1e0d16131512440095-1024-1024.webp","id": 3 }
+    { "name": "Sandalias Adidas", "price": 1500,"description": "Talles disponibles del 35 al 42.", "type": "feet", "url":"https://bboys.pe/cdn/shop/files/GZ3772_1.jpg?v=1684635575", "id": 1 },
+    { "name": "Casaca NY Knicks", "price": 2500, "description": "Disponible en S, M , L y XL.", "type": "top", "url":"https://d3ugyf2ht6aenh.cloudfront.net/stores/646/958/products/cc6ccbd1-6b29-409d-9e5c-30ec653b288f1-8db0b0e7e23ed394a316717524249035-240-0.jpeg", "id": 2 },
+    { "name": "Short Chicago Bulls", "price": 3500, "description": "Medida Ajustable.", "type": "bottom", "url":"https://acdn.mitiendanube.com/stores/001/015/914/products/bermuda-bulls1-ca9387d30a5bad1e0d16131512440095-1024-1024.webp","id": 3 }
   ]

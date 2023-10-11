@@ -5,28 +5,29 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
-//const CardProduct = ({product}) => {
 
-//}
-const CardProduct = ({ img, name, description, price }) => {
+  const CardProduct = ({ product }) => {
+    if (!product) {
+      return <div>No product data available</div>;
+    }
+  // const CardProduct = ({ img, name, description, price }) 
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
         <CardMedia
           component="img"
-          image={img} // {product.url} Recorro los productos que me traje de la API en List Card
-          alt="green iguana"
+          image={product.url} //Recorro los productos que me traje de la API en List Card
+          alt="product"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            {name} 
-            {/* {product.name} */}
+            {product.name}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            {description}
+            {product.description}
           </Typography>
           <Typography variant="caption" color="text.secondary">
-            {price}
+            {product.price}
           </Typography>
         </CardContent>
       </CardActionArea>

@@ -12,14 +12,16 @@ const Category = () => {
 
     useEffect(()=>{
       // setIsLoading(false)
-      fetch(`/${categoryId}`)
-      .then((datos) => datos.json())
-      .then((respuesta) => setProducts(respuesta))
+      fetch(`https://raw.githubusercontent.com/sofiagurlekian/PreEntregaReact-Gurlekian/main/data.json/${categoryId}`)
+      .then((data) => data.json())
+      .then((response) => setProducts(response))
+      .catch((error) => console.error('Error fetching data:', error));
       //.finally(setIsLoading(false))
 
       //setTimeOut(()=>{
       //setIsLoading(false)
       //}, 1000);
+
   }, [])
 
   let filteredProducts = products.filter((product) =>{

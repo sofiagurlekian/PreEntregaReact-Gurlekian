@@ -1,5 +1,6 @@
 import ListCard from "../components/ListCard/ListCard";
 
+
 const Home = () => {
   return (
     <div>
