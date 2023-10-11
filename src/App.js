@@ -1,11 +1,25 @@
 import { useState } from "react";
 import './App.css';
 
+//React Router DOM
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+
+ //Components
 import Header from './components/Header/Header';
 import CardProduct from './components/CardProduct/CardProduct';
 import Navbar from "./components/Navbar/Navbar";
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+// eslint-disable-next-line
 import ListCard from "./components/ListCard/ListCard";
+
+
+//Pages
+import Home from ".//pages/Home";
+import Contact from ".//pages/Contact";
+import About from ".//pages/About";
+import NotFound from "./pages/NotFound";
+
 
 function App() {
   const [counter, setCounter] = useState(1);
@@ -19,12 +33,19 @@ function App() {
     setCounter(counter -1)
   };
 
-  return (
+  return (  
+    <Router>
     <div className="App">
       <Header 
       title="Todo lo que buscás, en un solo lugar"
       />
       <Navbar /> 
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/contact" element={<Contact/>} />
+        <Route path="/about" element={<About/>} />  
+        <Route path="*" element={<NotFound/>} />  
+       </Routes>
       <div>
       <ItemListContainer />
       </div>
@@ -54,8 +75,9 @@ function App() {
         <button onClick={handleIncrement}>Incrementar</button>
         <button onClick={handleDecrement}>Disminuir</button>
        </div>
-       
+
     </div>
+    </Router> 
   );
 }
 
