@@ -14,7 +14,7 @@ const DetailPage = () => {
         // setIsLoading(false)
         fetch(`/${id}`)
         .then((datos) => datos.json())
-        .then((respuesta) => setProduct(respuesta))
+        .then((respuesta) => setProduct(respuesta.filter(product => product.id === id)))
         //.finally(setIsLoading(false))
 
         //setTimeOut(()=>{
